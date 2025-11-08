@@ -1,0 +1,117 @@
+<header id="page-header" class="header-23">
+
+	<!-- top bar -->
+	<div class="header-23-top-bar">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8 col-xs-12">
+					<ul class="list-inline header-23-bar-list">
+						<li><i class="ri-phone-line"></i> +91&nbsp;888&nbsp;888&nbsp;8888</li>
+						<li class="hidden-xs"><span class="sep">|</span>
+							<i class="ri-map-pin-line"></i> Address:56/A,Newyork
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4 col-xs-12 text-right">
+					<ul class="list-inline header-23-bar-list">
+						<li><i class="ri-mail-line"></i> Email:&nbsp;info@violin.com</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- logo + nav -->
+	<div class="header-23-holder">
+		<div class="container">
+			<div class="row">
+
+				<!-- logo -->
+				<div class="col-xs-6 col-sm-3">
+					<a href="home.html" class="header-23-logo">
+						<img src="assets/clients/Music/Music/images/logo-header-23.png" alt="FinAdviser"
+							class="img-responsive">
+					</a>
+				</div>
+
+				<!-- nav -->
+				<div class="col-xs-6 col-sm-9">
+					<nav class="navbar navbar-default header-23-navbar" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#dynamic-header">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span><span class="icon-bar"></span><span
+									class="icon-bar"></span>
+							</button>
+						</div>
+
+						<div class="collapse navbar-collapse" id="dynamic-header">
+							<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="About&nbsp;Us.html">About&nbsp;Us</a></li>
+								<li><a href="Courses.html">Courses</a></li>
+								<li><a href="Events.html">Events</a></li>
+								<li><a href="Contact.html">Contact</a></li>
+							</ul>
+						</div>
+
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<section class="header-23-hero main-header-section"
+	style="background: url('assets/clients/Music/Music/images/header-23-bg.jpg') center/cover no-repeat;">
+	<div class="header-23-hero-overlay"></div>
+
+	<div class="container header-23-hero-content">
+		<h1 class="header-23-hero-title">
+			Feel the Beat<br>
+			of <span class="header-23-highlight">Music</span>
+		</h1>
+
+		<p class="header-23-hero-sub">
+			Dive into the world of melody, rhythm, and passion. Join our musical journey and discover your true sound.
+		</p>
+
+		<a href="#" class="btn header-23-btn-primary">
+			Explore Tracks <i class="ri-arrow-right-line"></i>
+		</a>
+	</div>
+</section>
+
+
+<script>
+	$(function () {
+
+		var $header = $('#page-header');
+		var heroHeight = $('.header-23-hero').outerHeight();   // distance to scroll
+
+		/* toggle class on scroll */
+		$(window).on('scroll', function () {
+			if ($(this).scrollTop() >= heroHeight) {
+				$header.addClass('header-23--sticky');
+			} else {
+				$header.removeClass('header-23--sticky');
+			}
+		});
+
+	});
+</script>
+<section class="header-breadcrumb-section"
+	style="background:url('assets/clients/Music/Music/images/header-23-bg.jpg') no-repeat center/cover;">
+	<div class="container text-center">
+		<h1 class="header-breadcrumb-section-title"><span class="Page_name">Page Name</span></h1>
+		<p class="header-breadcrumb-section-breadcrumb">
+			<a href="index.html">Home</a> &gt; <span class="Page_name">Page Name</span>
+		</p>
+	</div>
+</section>
